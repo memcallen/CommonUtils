@@ -22,6 +22,10 @@ public class Pair<S, T> {
         this.t = t;
     }
 
+    public String toString() {
+        return "pair(" + s.toString() + ", " + t.toString() + ")";
+    }
+    
     @Override
     public boolean equals(Object other) {
         return this.hashCode() == other.hashCode() && other instanceof Pair;
